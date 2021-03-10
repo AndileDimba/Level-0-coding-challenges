@@ -9,5 +9,3 @@ var x = x + 3
 var y = y + x
 console.log(x)
 console.log(y)
-
-  
