@@ -1,13 +1,12 @@
 // Task 0.6
 
-function maximumNumber(x,y,z) {
-    let max = 0;
-    if (x > y) {
-        max = x > y ? x : z;
-    } else {
-        max = y > z ? y : z;
-    }
+const maximumNumber = (...nums) => {
+    let max = -Infinity;
+    for(let i = 0; i < nums.length; i++){
+       if(nums[i] > max){
+          max = nums[i];
+       };
+    };
     return max;
-}
-
-console.log(maximumNumber(300,400,700));
+ };
+ console.log(maximumNumber(2, 7, 3));
